@@ -17,11 +17,17 @@ p {
 
 button {
     border-radius: 8px;
-    background: rgb(229, 84, 115);
+    background-color: rgb(229, 84, 115);
     color: #fff;
     font-size: 20px;
     border: none;
     padding: 15px 28px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+button:hover {
+    background-color: rgb(211, 43, 80);
 }
 
 header {
@@ -56,4 +62,67 @@ header {
 .banner .banner-img img {
     width: 100%;
     vertical-align: middle;
+}
+
+#featured-section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    max-width: 500px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.section-heading h2 {
+    color: rgb(39, 39, 39);
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    margin-bottom: 16px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 24px;
+
+    & .flower {
+        & .flower-img {
+            border-radius: 300px 300px 0px 0px;
+            padding: 30px 25px 0;
+            height: 400px;
+            display: flex;
+            align-items: end;
+            margin-bottom: 32px;
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        & .pink {
+            background: rgba(167, 33, 98, 0.15);
+        }
+
+        & .blue {
+            background: rgba(5, 151, 160, 0.15);
+        }
+
+        & .gray {
+            background: rgba(71, 125, 17, 0.15);
+        }
+
+        & .flower-info {
+            color: rgb(39, 39, 39);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 35px;
+            text-align: center;
+            text-decoration-line: underline;
+        }
+
+    }
 }
