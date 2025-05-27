@@ -126,3 +126,22 @@ header {
 
     }
 }
+
+#support-section {
+    & .support {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 8px;
+        background: rgba(39, 39, 39, 0.05);
+        padding: 80px 0;
+        margin-bottom: 100px;
+    }
+}
+
+#support-section .support-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
